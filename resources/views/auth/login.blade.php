@@ -59,12 +59,7 @@
           </div>
           <div class="row">
             <div class="col-8">
-              <div class="icheck-primary">
-                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                <label for="remember">
-                  Remember Me
-                </label>
-              </div>
+              <a href="{{ route('register') }}" class="text-center btn btn-danger">{{ _('Register') }}</a> 
             </div>
             <!-- /.col -->
             <div class="col-4">
@@ -75,10 +70,6 @@
             <!-- /.col -->
           </div>
         </form>
-  
-        <p class="mb-0">
-          <a href="{{ route('register') }}" class="text-center">{{ _('Register') }}</a>
-        </p>
       </div>
       <!-- /.login-card-body -->
     </div>
