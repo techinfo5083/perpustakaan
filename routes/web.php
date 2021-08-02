@@ -21,6 +21,13 @@ Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
 
+Route::get('/kategori', function () {
+    $data = [
+        'tittle'    => 'Kategori'
+    ];
+    return view('kategori', $data);
+})->name('kategori');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
