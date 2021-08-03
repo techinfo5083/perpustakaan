@@ -50,8 +50,8 @@
                             <td>{{  $bk->tahun_penerbit }}</td>
                             <td>{{  $bk->stok }}</td>
                             <td>
-                                <button  class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                                <button  wire:click="getBukuID({{ $bk->id }})"class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                                <button wire:click="destroy({{ $bk->id }})" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                <button wire:click="getBukuID({{ $bk->id }})"class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></button>
                             </td>
                         </tr>
                         @php

@@ -5,9 +5,12 @@ namespace App\Http\Livewire\Buku;
 use Livewire\Component;
 use App\Models\Buku;
 use Illuminate\Support\Facades\DB;
+use Livewire\WithPagination;
 
 class BukuIndex extends Component
 {
+    use WithPagination;
+
     public $paginate = 5;
     public $search;
     public $statusUpdate = false;
@@ -51,5 +54,12 @@ class BukuIndex extends Component
         $this->statusUpdate = true;
         $buku = Buku::find($id);
         $this->emit('getBuku',$buku);
+    }
+
+    public function destroy($id)
+    {
+        if($id){
+            buku::find($id)->delete();
+        }
     }
 }

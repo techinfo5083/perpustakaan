@@ -35,6 +35,13 @@ Route::get('/buku', function () {
     return view('buku', $data);
 })->name('buku');
 
+Route::get('/anggota', function () {
+    $data = [
+        'tittle'    => 'Anggota'
+    ];
+    return view('anggota', $data);
+})->name('anggota');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

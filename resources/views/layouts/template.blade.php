@@ -108,7 +108,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="{{ route('anggota') }}" class="nav-link {{ (request()->is('anggota')) ? 'active' : '' }}">
               <i class="nav-icon fa fa-user-friends"></i>
               <p>Data Anggota</p>
             </a>
