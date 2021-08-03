@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="{{  route('buku') }}" class="nav-link {{ (request()->is('buku')) ? 'active' : '' }}">
               <i class="nav-icon fa fa-book"></i>
               <p>Data Buku</p>
             </a>

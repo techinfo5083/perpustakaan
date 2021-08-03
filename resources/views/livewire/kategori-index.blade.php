@@ -15,14 +15,14 @@
                     </div>
                     <div class="card-body">
                         <div class="row mb-2">
-                            <div class="col-sm-2">
+                            <div class="col-sm-8">
                                 <select wire:model="paginate" name="" id="" class="form-control form-control-sm w-auto">
                                     <option value="3">3</option>
                                     <option value="5">5</option>
                                     <option value="10">10</option>
                                 </select>
                             </div>
-                            <div class="col-sm-10">
+                            <div class="col-sm-4">
                                 <input type="text" wire:model="search" name="" id="" class="form-control form-control-sm" placeholder="Search...">
                             </div>
                         </div>

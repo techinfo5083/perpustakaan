@@ -12,6 +12,7 @@
         </div>
         <div class="card-body">
             <form wire:submit.prevent="update">
+                <input type="hidden" wire:model="kategoryID">
                 <div class="form-group">
                     <label for="kd">Kode Kategori</label>
                     <input type="text" wire:model="kode_kategori" id="kd" class="form-control @error('kode_kategori') is-invalid @enderror">

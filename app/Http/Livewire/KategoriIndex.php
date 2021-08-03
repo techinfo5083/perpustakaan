@@ -10,7 +10,7 @@ class KategoriIndex extends Component
 {
     use WithPagination;
 
-     public $paginate;
+     public $paginate = 3;
      public $search;
      public $statusUpdate = false;
 

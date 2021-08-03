@@ -28,6 +28,13 @@ Route::get('/kategori', function () {
     return view('kategori', $data);
 })->name('kategori');
 
+Route::get('/buku', function () {
+    $data = [
+        'tittle'    => 'Buku'
+    ];
+    return view('buku', $data);
+})->name('buku');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
