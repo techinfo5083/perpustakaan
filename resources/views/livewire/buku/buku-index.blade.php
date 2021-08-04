@@ -11,17 +11,17 @@
             </div>
             <div class="card-body">
                 <div class="row mb-2">
-                            <div class="col-sm-8">
-                                <select wire:model="paginate" name="" id="" class="form-control form-control-sm w-auto">
-                                    <option value="5">5</option>
-                                    <option value="15">15</option>
-                                    <option value="20">20</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-4">
-                                <input type="text" wire:model="search" name="" id="" class="form-control form-control-sm" placeholder="Search judul buku...">
-                            </div>
-                        </div>
+                    <div class="col-sm-8">
+                        <select wire:model="paginate" name="" id="" class="form-control form-control-sm w-auto">
+                            <option value="5">5</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" wire:model="search" name="" id="" class="form-control form-control-sm" placeholder="Search judul buku...">
+                    </div>
+                </div>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <tr class="text-center">
